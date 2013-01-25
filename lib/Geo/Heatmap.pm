@@ -13,7 +13,7 @@ has 'palette'       => (isa => 'Str', is => 'rw');
 
 __PACKAGE__->meta->make_immutable;
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 sub tile {
   my ($self, $tile, $debug) = @_;
@@ -162,18 +162,14 @@ Geo::Heatmap - generate a density map (aka heatmap) overlay layer for Google Map
 
 =head1 VERSION
 
-version 0.05
+version 0.07
 
 =head1 REQUIRES
 
 L<Moose>
-
 L<Storable>
-
 L<CHI>
-
 L<Image::Magick>
-
 
 =head1 METHODS
 
@@ -186,12 +182,12 @@ L<Image::Magick>
 
 =head1 ATTRIBUTES
 
-has 'debug'         => (isa => 'Str', is => 'rw');
-has 'cache'         => (isa => 'Object', is => 'rw');
-has 'logfile'       => (isa => 'Str', is => 'rw');
-has 'return_points' => (isa => 'CodeRef', is => 'rw');
-has 'zoom_scale'    => (isa => 'HashRef', is => 'rw');
-has 'palette'       => (isa => 'Str', is => 'rw');
+debug
+cache
+logfile
+return_points
+zoom_scale
+palette
 
 =head2 USAGE
 

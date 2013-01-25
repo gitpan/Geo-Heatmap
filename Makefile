@@ -1,4 +1,4 @@
-# This Makefile is for the Geo::Heatmap extension to perl.
+# This Makefile is for the Geo-Heatmap extension to perl.
 #
 # It was generated automatically by MakeMaker version
 # 6.62 (Revision: 66200) from the contents of
@@ -11,16 +11,16 @@
 
 #   MakeMaker Parameters:
 
-#     ABSTRACT => q[generate a density map (aka heatmap) overlay layer for Google Maps]
+#     ABSTRACT_FROM => q[lib/Geo/Heatmap.pm]
 #     AUTHOR => [q[Mark Hofstetter <cpan@trust-box.at>]]
-#     BUILD_REQUIRES => { Test::More=>q[0] }
-#     CONFIGURE_REQUIRES => { ExtUtils::MakeMaker=>q[6.30] }
-#     DISTNAME => q[Geo::Heatmap]
+#     BUILD_REQUIRES => { Test::Most=>q[0] }
+#     CONFIGURE_REQUIRES => { ExtUtils::MakeMaker=>q[6.58] }
 #     EXE_FILES => []
 #     LICENSE => q[perl]
-#     NAME => q[Geo::Heatmap]
-#     PREREQ_PM => { Test::More=>q[0], Image::Magick=>q[6.77], CHI=>q[0.56], Moose=>q[2.0604] }
-#     VERSION => q[0.06]
+#     MIN_PERL_VERSION => q[5.012000]
+#     NAME => q[Geo-Heatmap]
+#     PREREQ_PM => { Test::Most=>q[0], Image::Magick=>q[6.77], CHI=>q[0.56], Moose=>q[2.0604] }
+#     VERSION_FROM => q[lib/Geo/Heatmap.pm]
 #     test => { TESTS=>q[t/*.t] }
 
 # --- MakeMaker post_initialize section:
@@ -58,13 +58,13 @@ VENDORLIBEXP =
 AR_STATIC_ARGS = cr
 DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
-NAME = Geo::Heatmap
+NAME = Geo-Heatmap
 NAME_SYM = Geo_Heatmap
-VERSION = 0.06
+VERSION = 0.05
 VERSION_MACRO = VERSION
-VERSION_SYM = 0_06
+VERSION_SYM = 0_05
 DEFINE_VERSION = -D$(VERSION_MACRO)=\"$(VERSION)\"
-XS_VERSION = 0.06
+XS_VERSION = 0.05
 XS_VERSION_MACRO = XS_VERSION
 XS_DEFINE_VERSION = -D$(XS_VERSION_MACRO)=\"$(XS_VERSION)\"
 INST_ARCHLIB = blib/arch
@@ -148,11 +148,11 @@ MM_REVISION = 66200
 # PARENT_NAME = NAME without BASEEXT and no trailing :: (eg Foo::Bar)
 # DLBASE  = Basename part of dynamic library. May be just equal BASEEXT.
 MAKE = make
-FULLEXT = Geo/Heatmap
+FULLEXT = Geo-Heatmap
 BASEEXT = Heatmap
-PARENT_NAME = Geo
+PARENT_NAME = 
 DLBASE = $(BASEEXT)
-VERSION_FROM = 
+VERSION_FROM = lib/Geo/Heatmap.pm
 OBJECT = 
 LDFROM = $(OBJECT)
 LINKTYPE = dynamic
@@ -171,8 +171,8 @@ MAN3PODS = lib/Geo/Heatmap.pm \
 CONFIGDEP = $(PERL_ARCHLIB)$(DFSEP)Config.pm $(PERL_INC)$(DFSEP)config.h
 
 # Where to build things
-INST_LIBDIR      = $(INST_LIB)/Geo
-INST_ARCHLIBDIR  = $(INST_ARCHLIB)/Geo
+INST_LIBDIR      = $(INST_LIB)
+INST_ARCHLIBDIR  = $(INST_ARCHLIB)
 
 INST_AUTODIR     = $(INST_LIB)/auto/$(FULLEXT)
 INST_ARCHAUTODIR = $(INST_ARCHLIB)/auto/$(FULLEXT)
@@ -261,8 +261,8 @@ CI = ci -u
 RCS_LABEL = rcs -Nv$(VERSION_SYM): -q
 DIST_CP = best
 DIST_DEFAULT = tardist
-DISTNAME = Geo::Heatmap
-DISTVNAME = Geo::Heatmap-0.06
+DISTNAME = Geo-Heatmap
+DISTVNAME = Geo-Heatmap-0.05
 
 
 # --- MakeMaker macro section:
@@ -489,16 +489,16 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) 'author:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  - '\''Mark Hofstetter <cpan@trust-box.at>'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'build_requires:' >> META_new.yml
-	$(NOECHO) $(ECHO) '  Test::More: 0' >> META_new.yml
+	$(NOECHO) $(ECHO) '  Test::Most: 0' >> META_new.yml
 	$(NOECHO) $(ECHO) 'configure_requires:' >> META_new.yml
-	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: 6.30' >> META_new.yml
+	$(NOECHO) $(ECHO) '  ExtUtils::MakeMaker: 6.58' >> META_new.yml
 	$(NOECHO) $(ECHO) 'dynamic_config: 1' >> META_new.yml
 	$(NOECHO) $(ECHO) 'generated_by: '\''ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120921'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'license: perl' >> META_new.yml
 	$(NOECHO) $(ECHO) 'meta-spec:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  url: http://module-build.sourceforge.net/META-spec-v1.4.html' >> META_new.yml
 	$(NOECHO) $(ECHO) '  version: 1.4' >> META_new.yml
-	$(NOECHO) $(ECHO) 'name: Geo::Heatmap' >> META_new.yml
+	$(NOECHO) $(ECHO) 'name: Geo-Heatmap' >> META_new.yml
 	$(NOECHO) $(ECHO) 'no_index:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  directory:' >> META_new.yml
 	$(NOECHO) $(ECHO) '    - t' >> META_new.yml
@@ -507,7 +507,8 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '  CHI: 0.56' >> META_new.yml
 	$(NOECHO) $(ECHO) '  Image::Magick: 6.77' >> META_new.yml
 	$(NOECHO) $(ECHO) '  Moose: 2.0604' >> META_new.yml
-	$(NOECHO) $(ECHO) 'version: 0.06' >> META_new.yml
+	$(NOECHO) $(ECHO) '  perl: 5.012000' >> META_new.yml
+	$(NOECHO) $(ECHO) 'version: 0.05' >> META_new.yml
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
 	$(NOECHO) $(ECHO) '{' > META_new.json
@@ -524,7 +525,7 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",' >> META_new.json
 	$(NOECHO) $(ECHO) '      "version" : "2"' >> META_new.json
 	$(NOECHO) $(ECHO) '   },' >> META_new.json
-	$(NOECHO) $(ECHO) '   "name" : "Geo::Heatmap",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "name" : "Geo-Heatmap",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "no_index" : {' >> META_new.json
 	$(NOECHO) $(ECHO) '      "directory" : [' >> META_new.json
 	$(NOECHO) $(ECHO) '         "t",' >> META_new.json
@@ -534,24 +535,25 @@ metafile : create_distdir
 	$(NOECHO) $(ECHO) '   "prereqs" : {' >> META_new.json
 	$(NOECHO) $(ECHO) '      "build" : {' >> META_new.json
 	$(NOECHO) $(ECHO) '         "requires" : {' >> META_new.json
-	$(NOECHO) $(ECHO) '            "Test::More" : "0"' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Test::Most" : "0"' >> META_new.json
 	$(NOECHO) $(ECHO) '         }' >> META_new.json
 	$(NOECHO) $(ECHO) '      },' >> META_new.json
 	$(NOECHO) $(ECHO) '      "configure" : {' >> META_new.json
 	$(NOECHO) $(ECHO) '         "requires" : {' >> META_new.json
-	$(NOECHO) $(ECHO) '            "ExtUtils::MakeMaker" : "6.30"' >> META_new.json
+	$(NOECHO) $(ECHO) '            "ExtUtils::MakeMaker" : "6.58"' >> META_new.json
 	$(NOECHO) $(ECHO) '         }' >> META_new.json
 	$(NOECHO) $(ECHO) '      },' >> META_new.json
 	$(NOECHO) $(ECHO) '      "runtime" : {' >> META_new.json
 	$(NOECHO) $(ECHO) '         "requires" : {' >> META_new.json
 	$(NOECHO) $(ECHO) '            "CHI" : "0.56",' >> META_new.json
 	$(NOECHO) $(ECHO) '            "Image::Magick" : "6.77",' >> META_new.json
-	$(NOECHO) $(ECHO) '            "Moose" : "2.0604"' >> META_new.json
+	$(NOECHO) $(ECHO) '            "Moose" : "2.0604",' >> META_new.json
+	$(NOECHO) $(ECHO) '            "perl" : "5.012000"' >> META_new.json
 	$(NOECHO) $(ECHO) '         }' >> META_new.json
 	$(NOECHO) $(ECHO) '      }' >> META_new.json
 	$(NOECHO) $(ECHO) '   },' >> META_new.json
 	$(NOECHO) $(ECHO) '   "release_status" : "stable",' >> META_new.json
-	$(NOECHO) $(ECHO) '   "version" : "0.06"' >> META_new.json
+	$(NOECHO) $(ECHO) '   "version" : "0.05"' >> META_new.json
 	$(NOECHO) $(ECHO) '}' >> META_new.json
 	-$(NOECHO) $(MV) META_new.json $(DISTVNAME)/META.json
 
@@ -847,10 +849,11 @@ testdb_static :: testdb_dynamic
 # --- MakeMaker ppd section:
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd :
-	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="0.06">' > $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="0.05">' > $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <ABSTRACT>generate a density map (aka heatmap) overlay layer for Google Maps</ABSTRACT>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR>Mark Hofstetter &lt;cpan@trust-box.at&gt;</AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '        <PERLCORE VERSION="5,012000,0,0" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="CHI::" VERSION="0.56" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Image::Magick" VERSION="6.77" />' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <REQUIRE NAME="Moose::" VERSION="2.0604" />' >> $(DISTNAME).ppd

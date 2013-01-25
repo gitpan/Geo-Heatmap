@@ -1,2 +1,0 @@
-GoogleMapsHeatmap
-=================
