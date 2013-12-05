@@ -485,7 +485,7 @@ realclean purge ::  clean realclean_subdirs
 metafile : create_distdir
 	$(NOECHO) $(ECHO) Generating META.yml
 	$(NOECHO) $(ECHO) '---' > META_new.yml
-	$(NOECHO) $(ECHO) 'abstract: '\''generate a density map (aka heatmap) overlay layer for Google Maps'\''' >> META_new.yml
+	$(NOECHO) $(ECHO) 'abstract: '\''generate a density map (aka heatmap) overlay layer for Google Maps, see the www directory in the distro how it works'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'author:' >> META_new.yml
 	$(NOECHO) $(ECHO) '  - '\''Mark Hofstetter <cpan@trust-box.at>'\''' >> META_new.yml
 	$(NOECHO) $(ECHO) 'build_requires:' >> META_new.yml
@@ -512,7 +512,7 @@ metafile : create_distdir
 	-$(NOECHO) $(MV) META_new.yml $(DISTVNAME)/META.yml
 	$(NOECHO) $(ECHO) Generating META.json
 	$(NOECHO) $(ECHO) '{' > META_new.json
-	$(NOECHO) $(ECHO) '   "abstract" : "generate a density map (aka heatmap) overlay layer for Google Maps",' >> META_new.json
+	$(NOECHO) $(ECHO) '   "abstract" : "generate a density map (aka heatmap) overlay layer for Google Maps, see the www directory in the distro how it works",' >> META_new.json
 	$(NOECHO) $(ECHO) '   "author" : [' >> META_new.json
 	$(NOECHO) $(ECHO) '      "Mark Hofstetter <cpan@trust-box.at>"' >> META_new.json
 	$(NOECHO) $(ECHO) '   ],' >> META_new.json
@@ -850,7 +850,7 @@ testdb_static :: testdb_dynamic
 # Creates a PPD (Perl Package Description) for a binary distribution.
 ppd :
 	$(NOECHO) $(ECHO) '<SOFTPKG NAME="$(DISTNAME)" VERSION="0.15">' > $(DISTNAME).ppd
-	$(NOECHO) $(ECHO) '    <ABSTRACT>generate a density map (aka heatmap) overlay layer for Google Maps</ABSTRACT>' >> $(DISTNAME).ppd
+	$(NOECHO) $(ECHO) '    <ABSTRACT>generate a density map (aka heatmap) overlay layer for Google Maps, see the www directory in the distro how it works</ABSTRACT>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <AUTHOR>Mark Hofstetter &lt;cpan@trust-box.at&gt;</AUTHOR>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '    <IMPLEMENTATION>' >> $(DISTNAME).ppd
 	$(NOECHO) $(ECHO) '        <PERLCORE VERSION="5,012000,0,0" />' >> $(DISTNAME).ppd

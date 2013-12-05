@@ -3,7 +3,7 @@ abstract: 'generate a density map (aka heatmap) overlay layer for Google Maps'
 author:
   - 'Mark Hofstetter <cpan@trust-box.at>'
 build_requires:
-  Test::More: 0
+  Test::Most: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
@@ -21,6 +21,7 @@ requires:
   CHI: 0.56
   Imager: 0.94
   Moose: 2.0604
-version: 0.16
+  perl: 5.012000
 resources:
   repository: https://github.com/MarkHofstetter/GoogleMapsHeatmap
+version: 0.16
