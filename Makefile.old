@@ -1,4 +1,4 @@
-# This Makefile is for the Geo::Heatmap extension to perl.
+# This Makefile is for the Geo-Heatmap extension to perl.
 #
 # It was generated automatically by MakeMaker version
 # 6.62 (Revision: 66200) from the contents of
@@ -18,7 +18,7 @@
 #     EXE_FILES => []
 #     LICENSE => q[perl]
 #     MIN_PERL_VERSION => q[5.012000]
-#     NAME => q[Geo::Heatmap]
+#     NAME => q[Geo-Heatmap]
 #     PREREQ_PM => { Test::Most=>q[0], Imager=>q[0.94], CHI=>q[0.56], Moose=>q[2.0604] }
 #     VERSION_FROM => q[lib/Geo/Heatmap.pm]
 #     test => { TESTS=>q[t/*.t] }
@@ -58,7 +58,7 @@ VENDORLIBEXP =
 AR_STATIC_ARGS = cr
 DIRFILESEP = /
 DFSEP = $(DIRFILESEP)
-NAME = Geo::Heatmap
+NAME = Geo-Heatmap
 NAME_SYM = Geo_Heatmap
 VERSION = 0.15
 VERSION_MACRO = VERSION
@@ -148,9 +148,9 @@ MM_REVISION = 66200
 # PARENT_NAME = NAME without BASEEXT and no trailing :: (eg Foo::Bar)
 # DLBASE  = Basename part of dynamic library. May be just equal BASEEXT.
 MAKE = make
-FULLEXT = Geo/Heatmap
+FULLEXT = Geo-Heatmap
 BASEEXT = Heatmap
-PARENT_NAME = Geo
+PARENT_NAME = 
 DLBASE = $(BASEEXT)
 VERSION_FROM = lib/Geo/Heatmap.pm
 OBJECT = 
@@ -171,8 +171,8 @@ MAN3PODS = lib/Geo/Heatmap.pm \
 CONFIGDEP = $(PERL_ARCHLIB)$(DFSEP)Config.pm $(PERL_INC)$(DFSEP)config.h
 
 # Where to build things
-INST_LIBDIR      = $(INST_LIB)/Geo
-INST_ARCHLIBDIR  = $(INST_ARCHLIB)/Geo
+INST_LIBDIR      = $(INST_LIB)
+INST_ARCHLIBDIR  = $(INST_ARCHLIB)
 
 INST_AUTODIR     = $(INST_LIB)/auto/$(FULLEXT)
 INST_ARCHAUTODIR = $(INST_ARCHLIB)/auto/$(FULLEXT)

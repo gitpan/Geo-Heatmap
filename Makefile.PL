@@ -10,10 +10,10 @@ WriteMakefile(
     EXE_FILES          => [],
     LICENSE            => 'perl',
     MIN_PERL_VERSION   => '5.12.0',
-    NAME               => 'Geo-Heatmap',
+    NAME               => 'Geo::Heatmap',
     PREREQ_PM          => {
         'Moose'         => '2.0604',
-        'Image::Magick' => '6.77',
+        'Imager'        => '0.94',
         'CHI'           => '0.56',
     },
     VERSION_FROM => $from,
