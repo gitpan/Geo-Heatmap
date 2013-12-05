@@ -13,7 +13,7 @@ has 'palette'       => (isa => 'Str', is => 'rw');
 has 'scale'         => (isa => 'Int', is => 'rw', default => 1);
 has 'blur'          => (isa => 'Int', is => 'rw', default => 4);  
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 sub tile {
   my ($self, $tile, $debug) = @_;
