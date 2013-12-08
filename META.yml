@@ -1,26 +1,39 @@
 ---
-abstract: 'generate a density map (aka heatmap) overlay layer for Google Maps'
+abstract: 'generate a density map (aka heatmap) overlay layer for Google Maps, see the www directory in the distro how it works'
 author:
-  - 'Mark Hofstetter <cpan@trust-box.at>'
+  - 'Mark Hofstetter <hofstettm@cpan.org>'
 build_requires:
-  Test::More: 0
+  Test::Most: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  Module::Build::Tiny: 0.030
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Milla version v1.0.4, Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.133380'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Geo::Heatmap
+name: Geo-Heatmap
 no_index:
   directory:
     - t
+    - xt
     - inc
+    - share
+    - eg
+    - examples
 requires:
   CHI: 0.56
   Imager: 0.94
   Moose: 2.0604
-version: 0.16
+  perl: 5.012000
 resources:
-  repository: https://github.com/MarkHofstetter/GoogleMapsHeatmap
+  bugtracker: https://github.com/MarkHofstetter/GoogleMapsHeatmap/issues
+  homepage: https://github.com/MarkHofstetter/GoogleMapsHeatmap
+  repository: https://github.com/MarkHofstetter/GoogleMapsHeatmap.git
+version: 0.17
+x_contributors:
+  - 'David Steinbrunner <dsteinbrunner@pobox.com>'
+  - 'Mark Hofstetter <mark@univie.ac.at>'
+  - 'Mark Hofstetter <mh@univie.ac.at>'
+  - 'MarkHofstetter <mark@hofstetter.at>'
+  - 'brian d foy <brian.d.foy@gmail.com>'
