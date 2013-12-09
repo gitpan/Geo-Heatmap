@@ -30,7 +30,7 @@ resources:
   bugtracker: https://github.com/MarkHofstetter/GoogleMapsHeatmap/issues
   homepage: https://github.com/MarkHofstetter/GoogleMapsHeatmap
   repository: https://github.com/MarkHofstetter/GoogleMapsHeatmap.git
-version: 0.17
+version: 0.18
 x_contributors:
   - 'David Steinbrunner <dsteinbrunner@pobox.com>'
   - 'Mark Hofstetter <mark@univie.ac.at>'
